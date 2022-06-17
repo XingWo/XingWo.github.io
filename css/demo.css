@@ -135,9 +135,9 @@ li{
 	position: absolute;
 	top:0;right:0;bottom:0;left:0;
 	background-position: center;
-	filter: blur(10px);
+	filter: blur(3px);
 	z-index: -1;
-	transition:all 0.5s;
+	transition:all 0.8s;
 }
 .box:hover.box::before{
 	background-image: url(../img/background.png);

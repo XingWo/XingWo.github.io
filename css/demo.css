@@ -1,0 +1,312 @@
+/* 闲的没事？想要代码？
+都给我翻到这里面来了？
+怎么点进来的链接？
+不直接找我要？
+拿去吧！给你！
+把你三连+分享留下就行 */
+
+
+*{
+	padding: 0;
+	margin: 0;
+}
+a,p,img,div{
+	user-select: none;
+}
+.pinmutishi{
+	position: fixed;
+	left: 0;top: 0;bottom: 0;right: 0;
+	height: 100%;
+	width: 100%;
+	content: '';
+	background: steelblue;
+	opacity:0.8;
+	transition:all 0.5s;
+	z-index: 100;
+	display: none;
+	line-height: 100vh;
+	text-align: center;
+}
+@keyframes backgroundgif{/* 移动背景画布位置来完成动画 */
+	22%{
+		background-position: 1% 1%;
+	}
+	38%{
+		background-position: 99% 99%;
+	}
+	65%{
+		background-position: 99% 99%;
+	}
+	83%{
+		background-position: 50% 50%;
+	}
+}
+
+body{
+	height: 100vh;
+	min-width: 160vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition:all 0.3s;
+}
+
+p{
+	color: transparent;
+	background-image: linear-gradient(to right,#00ffff,#aaaaff);
+	-webkit-background-clip: text;
+	font-family:cursive;
+	text-align:center;
+	animation: backgroundgif 8s infinite;
+	background-size: 300%;
+}
+@font-face {
+	font-family: "pingfang";
+	src: url("../hjsy/css/font0.ttf");
+}
+.boxleft p{
+	cursor: pointer;
+	font-size: 6.8vh;
+}
+.boxleftnextz p{
+	font-family: "隶书","cursive","pingfang";
+	font-size: 3.6vh;
+	margin-top: 3.3vh;
+}
+.boxleftnext p{
+	font-family: "隶书","cursive","pingfang";
+	font-size: 5.0vh;
+	margin-top: 1.3vh;
+}
+.boxleftnextright p{
+	font-family: "隶书","cursive","pingfang";
+	font-size: 3.6vh;
+	margin-top: 3.3vh;
+}
+.boxleftup p{
+	text-shadow: 0.2vh 0.3vh 0.1vh #98dbff;
+	box-shadow: 3px 3px 1px #888888;
+	font-weight:bold;/* 字体加粗*/
+}
+.boxrightnext p{
+	font-size: 4.5vh;
+	text-indent:2em;
+	text-align:left;
+	display: flex;
+	flex-wrap:wrap;
+	align-items: center;
+	justify-content: center;
+}
+.boxrightnext a,#nr2 p{
+	color: #00ffff;
+}
+
+
+a{
+	color: transparent;
+	background-image: linear-gradient(to right,#00ffff,#aaaaff);
+	-webkit-background-clip: text;
+	font-family:cursive;
+	text-decoration: none;
+}
+
+li{
+	font-size: 3vh;
+	list-style: none;
+}
+
+.box{
+	box-shadow: 5px 5px 15px #888888;
+	border-radius: 0.8vh;
+	height: 90vh;
+	aspect-ratio: 16/9;
+	min-height: 306px;
+	background: rgba(95, 122, 167, 0.16);
+	transition:all 0.3s;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+}
+.box::before{
+	width: 100%;
+	height: 100%;
+	background-size: 125%;
+	content: '';
+	position: absolute;
+	top:0;right:0;bottom:0;left:0;
+	background-position: center;
+	filter: blur(10px);
+	z-index: -1;
+	transition:all 0.5s;
+}
+.box:hover.box::before{
+	background-image: url(../img/background.png);
+	background-position: center;
+	filter: blur(15px);
+}
+.boxleft{
+	border-radius: 8px 2px 2px 8px;
+	box-shadow: 15px 5px 50px #888888;
+	width: 33.5%;
+	height: 100%;
+	overflow-y: hidden;
+}
+.boxleftup{
+	border-radius: 8px;
+	width: 99.5%;
+}
+.boxleftnext{
+	border-radius: 8px;
+	width: 100%;
+	height: 88%;
+	float: left;
+	transition:all 0.3s;
+	box-shadow: 2px 2px 5px #888888;
+}
+.boxleftnextz{
+	border-radius: 8px;
+	width: 33%;
+	height: 88%;
+	margin-top: 1.5%;
+	float: left;
+	transition:all 0.3s;
+	box-shadow: 2px 2px 5px #888888;
+}
+.boxleftnextright{
+	border-radius: 8px;
+	width: 66%;
+	height: 88%;
+	margin-top: 1.5%;
+	float: left;
+}
+
+
+/* 左半边的布局 */
+
+.boxright{
+	border-radius: 8px;
+	width: 66%;
+	height: 100%;
+	float: right;
+	transition:all 0.3s;
+}
+.boxrightadd{
+	border-radius: 8px;
+	width: 100%;
+	height: 100%;
+	transition:all 0.3s;
+	right: 0;
+	bottom: 0;
+}
+#nr1{
+	border-radius: 8px;
+	font-size: 8vh;
+	box-shadow: 3px 3px 3px #888888;
+}
+.boxrightnext{
+	border-radius: 8px;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+#nr3{
+	height: 5vh;
+	width: 100%;
+	position:absolute;
+	bottom: 1%;
+	display: flex;
+	align-items: center;
+	justify-content:flex-end;
+}
+.boxrightnext a{
+	box-shadow: 2px 2px 8px #ffaaff;
+	border-radius: 5px;
+	margin-right: 6vh;
+}
+.boxrightnext p a{
+	text-indent:0em;
+	margin-top: 2vh;
+}
+.box:hover{
+	box-shadow: 3px 3px 5px #888888;
+	/* background: rgba(95, 122, 167, 0.28); */
+}
+.boxleft:hover{
+	box-shadow: 5px 5px 5px #888888;
+}
+.boxleftup p:hover{
+	box-shadow: 3px 3px 2px #888888;
+	text-shadow: 1px 1px 1px #98dbff;
+}
+.boxleftnext p:hover,.boxleftnextz p:hover,.boxleftnextright p:hover,.boxrightnext p:hover{
+	box-shadow: 3px 3px 20px #888888;
+}
+#nr1:hover{
+	box-shadow: 2px 2px 5px #888888;
+}
+.boxrightnext a:hover{
+	box-shadow: 1px 1px 5px #ff00ff;
+}
+
+
+.ball{
+	position: absolute;
+	right: 50px;
+	top: 15px;
+	font-size: 20px;
+	line-height: 33px;
+	text-align: center;
+	color: transparent;
+	background-image: linear-gradient(to right,#00ffff,#aaaaff);
+	-webkit-background-clip: text;
+	transition: 0.4s;
+	width: 32px;
+	height: 33px;
+	border: 1px solid #fff;
+	border-radius: 28% 62% 63% 37%/ 41% 44% 56% 59%;
+	animation: ball 8s infinite linear paused;
+	z-index: 5;
+}
+.pause{
+	width: 30px;
+	height: 6px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	border: 1px none #fff;
+	background-image: linear-gradient(to right,#00ffff,#aaaaff);
+	border-radius: 0% 100% 0% 100%/ 0% 100% 0% 100%;
+}
+.ball::after {
+	transition: 0.4s;
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	width: 32px;
+	height: 32px;
+	border: 1px solid #fff;
+	border-radius: 38% 62% 63% 37%/ 41% 44% 56% 59%;
+	animation: ball 5s infinite linear;
+}
+.ball::before {
+	transition: 0.4s;
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	width: 32px;
+	height: 32px;
+	border: 1px solid #fff;
+	border-radius: 38% 62% 63% 37%/ 41% 44% 56% 59%;
+	animation: ball 3s infinite linear;
+}
+@keyframes ball {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}

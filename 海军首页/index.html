@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>海军首页作业作品</title>
+	<link rel="stylesheet" type="text/css" href="css/header.css"><!-- 头部属性 -->
+	<link rel="stylesheet" type="text/css" href="css/bottom.css"><!-- 尾部属性 -->
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script src="layer/layer.js"></script>
+	<script src="js/rem.js"></script>
+</head>
+
+<body>
+	<!-- 伪嵌套头部 -->
+	<div class="logo">
+		<img src="img/44.png">
+	</div>
+	<div class="top-page">
+		<div class="rectangle-topbox">
+			<div class="rectangle-topleft">
+				<a href="index.html" class="sy">首页</a>
+				<p>/</p>
+				<a href="syyl.html">实验原理</a>
+				<p>/</p>
+				<a href="symd.html">实验目的</a>
+			</div>
+			<div class="rectangle-topright">
+				<a href="xmts.html">项目特色</a>
+				<p>/</p>
+				<a href="cjxq.html">成绩详情</a>
+				<p>/</p>
+				<a href="zxdy.html">在线答疑</a>
+			</div>
+		</div>
+	</div>
+	<!-- 伪嵌套头部 -->
+
+	<div class="home-page">
+		<div class="title">
+			<div class="title-p">
+				<p>“四史教育”之中国海军走向深海虚拟仿真实验</p>
+			</div>
+		</div>
+		<div class="content-img">
+			<div class="content">
+				<div class="content-left">
+					<div class="content-left-nr1">
+						<p>所属分类：<span>马克思主义理论学</span></p>
+						<p>实验学时：<span>8学时</span></p>
+					</div>
+					<div class="content-left-nr1">
+						<p>实验项目负责人：<span>张三</span></p>
+						<p>实验步骤：<span>33步</span></p>
+					</div>
+					<div class="content-left-nr1">
+						<p>联系电话：<span>1451646811</span></p>
+					</div>
+					<div class="content-left-nr1">
+						<p>实验简介：</p>
+					</div>
+					<div class="content-left-nr2">
+						<p>本项目拟构建中国海军走向深蓝虚拟仿真平台，将虚拟实践教学引入思想政治理论课（以下简称“思政课”）“四史”教育，体现沈阳理工大学作为军工院校思政教学的国防特色，提升学生对思想政治理论的学习兴趣，促进新媒体时代思政课教育教学的改革创新，提高思政课教学的实效性。提升学生对思想政治理论的学习兴趣，促进新媒体时代思政课教育教学的改革创新，提高思政课教学的实效性。提升学生对思想政治理论的学习兴趣，促进新媒体时代思政课教育教学的改革创新，提高思政课教学的实效性。
+						</p>
+					</div>
+					<div class="content-left-nr1">
+						<div id="content-left-btn"><a>开始实验</a></div>
+					</div>
+				</div>
+				<div class="content-right">
+					<div class="content-right-btns">
+						<div class="content-right-btn" id="btns0"><a onclick="btn(0)">项目简介</a></div>
+						<div class="content-right-btn content-right-btnx" id="btns1"><a onclick="btn(1)">项目引导</a></div>
+					</div>
+					<div class="video video0">
+						<div class="video-open" id="readyturn0">
+							<a class="readyturn"></a>
+						</div>
+					</div>
+					<div class="video video1">
+						<div class="video-open" id="readyturn1">
+							<a class="readyturn"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 伪嵌套尾部 -->
+	<div class="bottom-page">
+		<div class="rectangle-bottom">
+			<a>建设单位:沈阳理工大学</a>
+			<p>|</p>
+			<a>技术支持:福建犀牛智慧科技有限公司</a>
+		</div>
+	</div>
+	<!-- 伪嵌套尾部 -->
+	<script>
+		$(function () {
+			$("#readyturn0").click(function () {
+				layer.msg('暂无视频源');
+			})
+		})
+		$(function () {
+			$("#readyturn1").click(function () {
+				layer.msg('此处同无视频源');
+			})
+		})
+		$(function () {
+			$("#content-left-btn").click(function () {
+				layer.msg('视频无源');
+			})
+		})
+		function btn(num) {
+			if (num == 0) {
+				xnum = 1;
+			}
+			if (num == 1) {
+				xnum = 0;
+			}
+			$(".video" + xnum).hide();
+			$(".video" + num).show();
+			$("#btns" + xnum).addClass("content-right-btnx");
+			$("#btns" + num).removeClass("content-right-btnx");
+		}
+	</script>
+</body>
+
+</html>

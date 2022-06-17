@@ -723,7 +723,6 @@ no6.onclick=function(){
 			<p>选择始终允许权限</p>
 			<p>不建议低端机点击进行以下操作</p>
 			<a onclick="btn(3)">保证就只是小小看一下</a>
-			<a target="_blank" rel="noopener noreferrer" href="无限套娃/index.html">页面直达</a>
 			`;
 		}
 	}
@@ -790,8 +789,6 @@ function qtbtn(num){
 		$("#QT2").show();
 	}
 	if(num==3){
-		rice();
-		nr1.innerHTML=`就到这里吧，真心不让你点进去了`;
 		nr2.innerHTML=`
 		<iframe src="//player.bilibili.com/player.html?aid=721179179&bvid=BV1yQ4y1i74M&cid=478245249&page=1" height="100%" width="100%" scrolling="no" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute;top:0;left:0;z-index: 3;box-shadow: 0 0 0.3vh #98dbff;   border-radius: 8px;"> </iframe>
 		`;

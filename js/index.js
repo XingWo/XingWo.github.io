@@ -520,7 +520,7 @@ no4.onclick=function(){
 		yygdzt=4;
 		good();
 		boxr.className="boxleftnextz";
-		no11.innerHTML=`星沃`;
+		no11.innerHTML=`<input type="button" style="display: none;"/>星沃<p id="qtbtn2" style="display: none;">398932457</p>`;
 		no12.innerHTML=`独木匠`;
 		no13.innerHTML=`AIChannel中国绊爱`;
 	}
@@ -540,6 +540,11 @@ no4.onclick=function(){
 			<p>个人主页——→</p>
 			<a target="_blank" rel="noopener noreferrer" href="https://space.bilibili.com/398932457">点此跳转</a>
 			`;
+			var xingwo = $("#qtbtn2").text();//获取文本
+			var flag = copyText(xingwo); //传递文本
+			layer.tips('已复制我的哔哩哔哩UID', '#no11',{
+			  tips: [2, '#a2cbe6']
+			});
 		}
 	}
 	no12.onclick=function(){
@@ -618,7 +623,8 @@ no5.onclick=function(){
 			nr1.innerHTML=``;
 			nr2.innerHTML=`
 			<p>多站合一音乐搜索,音乐在线试听 - Wandhi</p>
-			<a onclick="qtbtn(2)">网页直连</a>
+			<p id="qtbtn2" style="display: none;">music.wandhi.com</p>
+			<a id="qtbtn_2" onclick="qtbtn(2)">网页直连<input type="button" style="display: none;"/></a>
 			`;
 		}
 	}
@@ -787,11 +793,38 @@ function qtbtn(num){
 	}
 	if(num==2){
 		$("#QT2").show();
+		var wandhi = $("#qtbtn2").text();//获取文本
+		var flag2 = copyText(wandhi); //传递文本
+		layer.tips('已复制网址', '#boss',{
+		  tips: [2, '#f9b5ff']
+		});
 	}
 	if(num==3){
 		nr2.innerHTML=`
 		<iframe src="//player.bilibili.com/player.html?aid=721179179&bvid=BV1yQ4y1i74M&cid=478245249&page=1" height="100%" width="100%" scrolling="no" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute;top:0;left:0;z-index: 3;box-shadow: 0 0 0.3vh #98dbff;   border-radius: 8px;"> </iframe>
 		`;
 	}
+}
+function copyText(text) {
+	var textarea = document.createElement("input");//创建input对象
+	var currentFocus = document.activeElement;//当前获得焦点的元素
+	document.body.appendChild(textarea);//添加元素
+	textarea.value = text;
+	textarea.focus();
+	if(textarea.setSelectionRange)
+		textarea.setSelectionRange(0, textarea.value.length);//获取光标起始位置到结束位置
+	else
+		textarea.select();
+	try {
+		var flag = document.execCommand("copy");//执行复制
+		var flag2 = document.execCommand("copy");//执行复制
+	} catch(eo) {
+		var flag = false;
+		var flag2 = false;
+	}
+	document.body.removeChild(textarea);//删除元素
+	currentFocus.focus();
+	return flag;
+	return flag2;
 }
 

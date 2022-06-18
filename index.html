@@ -54,7 +54,8 @@
 									zts.innerHTML=`故意的不？谁家屏幕长这样，就想玩坏我~哼o(´^｀)o！`;
 								}else{
 									$(".pinmutishi").hide();
-									$(".box").css("aspect-ratio",'210vh');
+									$(".box").css("aspect-ratio",'21/9');
+									$("body").css("min-width",'210vh');
 								}
 							}
 						}
@@ -64,8 +65,6 @@
 					var winhei=document.documentElement.clientHeight;
 					var winwid=document.documentElement.clientWidth;
 					var boxri=document.getElementById("boxand");
-					var boxhei=boxri.offsetHeight;
-					$("#QT2_nr").css("height",(boxhei+430)+'px');
 					if(winhei>winwid){
 						$(".pinmutishi").show();
 						zts.innerHTML=`推荐使用横屏浏览哦~`;
@@ -89,12 +88,15 @@
 										zts.innerHTML=`故意的不？谁家屏幕长这样，就想玩坏我~哼o(´^｀)o!`;
 									}else{
 										$(".pinmutishi").hide();
-										$(".box").css("aspect-ratio",'210vh');
+										$(".box").css("aspect-ratio",'21/9');
+										$("body").css("min-width",'210vh');
 									}
 								}
 							}
 						}
 					}
+					var boxhei=boxri.clientHeight;
+					$("#QT2_nr").css("height",(boxhei+430)+'px');
 				}
 				function loop(){
 					window.requestAnimationFrame(function(){
@@ -231,7 +233,7 @@
 					$("#btn2").css("display",'none');
 					$(".boxleft").css("display",'block');
 					var boxri=document.getElementById("boxand");
-					var boxhei=boxri.offsetHeight;
+					var boxhei=boxri.clientHeight;
 					$("#QT2_nr").css("height",(boxhei+430)+'px');
 				}
 				if(num==3){

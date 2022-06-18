@@ -5,7 +5,6 @@
 		<title>动漫人物切换案例</title>
 		<link rel="stylesheet" type="text/css" href="css/ckl250.css"/>
 		<link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
-		<script type="text/javascript" src="js/time.js"></script>
 		<style type="text/css">
 			body {
 				background-image: url(img/bg.jpg);
@@ -55,30 +54,7 @@
 				<div class="btn btn3" id="b3" onclick="btns(3)"></div>
 			</div>
 		</div>
-		<div class="shadiao">
-			<p id="time"></p>
-		</div>
 		<script src="js/ckl520.js"></script>
-		<script>
-		
-		//显示日期时间
-		var timerID = setInterval(updateTime, 1000);
-		var sitetime="2014/05/22 14:30:00";
-		updateTime();
-		
-		function updateTime() {
-		    var cd = new Date();
-		    $('#time').text(zeroPadding(cd.getHours(), 2) + ':' + zeroPadding(cd.getMinutes(), 2) + ':' + zeroPadding(cd.getSeconds(), 2));
-		};
-		
-		function zeroPadding(num, digit) {
-		    var zero = '';
-		    for(var i = 0; i < digit; i++) {
-		        zero += '0';
-		    }
-		    return (zero + num).slice(-digit);
-		}
-		</script>
 		<script type="text/javascript" src="js/new_file.js"></script>
 	</body>
 </html>

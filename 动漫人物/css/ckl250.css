@@ -14,68 +14,57 @@ body{
 }
 
 .shadiao{
-	width: 1200px;
-	height: 0px;
+	width: 120vh;
+	height: 0vh;
 }
 p{
-	font-size: 3vw;
+	font-size: 1.5vh;
 	color: #b4aaa1;
 }
 
 .page{
-	width: 1200px;
-	height: 600px;
-	/* margin: auto;
-	margin-top: 80px; */
+	width: 120vh;
+	height: 60vh;
 	display: flex;
 	justify-content: space-between;
-	/* transition:all 2s; */
-}
-
-.text{
-	/* float: left; */
-	/* margin-top: 80px; */
 }
 .text1{
 	width: 310px;
 	height: 415px;
 	background: url(../img/sprite.png);
-	background-position: -270px 0px;
+	background-position: -270px 0;
 }
 .text2{
 	width: 270px;
 	height: 415px;
 	background: url(../img/sprite.png);
-	background-position: 0px 0px;
+	background-position: 0 0;
 }
 .text3{
 	width: 280px;
 	height: 415px;
 	background: url(../img/sprite.png);
-	background-position: -585px 0px;
+	background-position: -585px 0;
 	
 }
 .text5{
 	width: 295px;
 	height: 408px;
 	background: url(../img/sprite.png);
-	background-position: 0px -420px;
+	background-position: 0 -420px;
 }
 
 .imgs{
-	width: 1050px;
-	height: 600px;
+	width: 105vh;
+	height: 60vh;
 	display: flex;
 	align-items: center;
 	justify-content:space-around;
-	/* float: left; */
-	/* overflow: hidden; */
 }
 
 .img{
-	width: 600px;
-	height: 600px;
-	/* float: left; */
+	width: 60.0vh;
+	height: 60.0vh;
 }
 .img img{
 	max-width: 100%;
@@ -83,19 +72,16 @@ p{
 }
 
 .button{
-	width: 120px;
-	height: 600px;
-	/* float: right; */
+	width: 12vh;
+	height: 60vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 }
 
 .btn{
-	width: 120px;
-	height: 120px;
-	/* float: left; */
-	/* margin-top: 25px; */
+	width: 12vh;
+	height: 12vh;
 	cursor: pointer;
 }
 .btn0{
@@ -162,6 +148,3 @@ p{
 #a1{
 	display:none;
 }
-/* .box{
-	display: none;
-} */

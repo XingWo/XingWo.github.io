@@ -23,10 +23,10 @@ $(document).ready(function(){
 		    });
 });
 function btna(num){
-	nom=110+num*60;
-	$(".huadongtiao").css("height",'60px');
-	$(".huadongtiao").css("top",nom+'px');
+	nom=11+num*6;
+	$(".huadongtiao").css("height",'6vh');
+	$(".huadongtiao").css("top",nom+'vh');
 }
 function btans(num){
-	$(".huadongtiao").css("height",'0px');
+	$(".huadongtiao").css("height",'0vh');
 }

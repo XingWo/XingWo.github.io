@@ -27,16 +27,9 @@ a,p,img,h1,h2,span{
 	width: 123vh;
 	height: 15.5vh;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	
-}
-.tittlenr{
-	width: 27vh;
-	height: 8vh;
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
 }
 .contentnrs{
 	width: 123vh;

@@ -60,7 +60,7 @@ p{
 	background-size: 300%;
 }
 @font-face {
-	font-family: "pingfang";
+	font-family:"pingfang";
 	src: url("../海军首页/css/font0.ttf");
 }
 .boxleft p{
@@ -68,17 +68,17 @@ p{
 	font-size: 6.8vh;
 }
 .boxleftnextz p{
-	font-family: "pingfang";
+	font-family:"隶书","pingfang";
 	font-size: 3.6vh;
 	margin-top: 3.3vh;
 }
 .boxleftnext p{
-	font-family: "pingfang";
+	font-family:"隶书","pingfang";
 	font-size: 5.0vh;
 	margin-top: 1.3vh;
 }
 .boxleftnextright p{
-	font-family: "pingfang";
+	font-family:"隶书","pingfang";
 	font-size: 3.6vh;
 	margin-top: 3.3vh;
 }

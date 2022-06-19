@@ -61,24 +61,24 @@ p{
 }
 @font-face {
 	font-family: "pingfang";
-	src: url("../hjsy/css/font0.ttf");
+	src: url("../海军首页/css/font0.ttf");
 }
 .boxleft p{
 	cursor: pointer;
 	font-size: 6.8vh;
 }
 .boxleftnextz p{
-	font-family: "隶书","cursive","pingfang";
+	font-family: "隶书","pingfang";
 	font-size: 3.6vh;
 	margin-top: 3.3vh;
 }
 .boxleftnext p{
-	font-family: "隶书","cursive","pingfang";
+	font-family: "隶书","pingfang";
 	font-size: 5.0vh;
 	margin-top: 1.3vh;
 }
 .boxleftnextright p{
-	font-family: "隶书","cursive","pingfang";
+	font-family: "隶书","pingfang";
 	font-size: 3.6vh;
 	margin-top: 3.3vh;
 }

@@ -116,12 +116,15 @@
 			<script>
 				var audio = document.querySelector("audio");
 				var audiozt = 0;
+				function open(){
+					audiozt=1;
+					$(".ball").css("animation",'ball 8s infinite linear');
+					$(".pause").hide();
+					audio.play();
+				}
 				function btnplay(){
 					if(audiozt == 0){
-						audiozt=1;
-						audio.play();
-						$(".ball").css("animation",'ball 8s infinite linear');
-						$(".pause").hide();
+						open();
 					}else{
 						audiozt=0;
 						audio.pause();
@@ -129,6 +132,10 @@
 						$(".pause").show();
 					}
 				}
+				$(document).ready(function(){
+					// 如果引用资源需要写页面加载完毕后执行，否则可能执行了都是没引用到资源
+					open();
+				})
 			</script>
 		</div>
 		<div id="boxand" class="box">

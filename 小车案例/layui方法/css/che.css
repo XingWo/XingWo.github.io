@@ -117,6 +117,9 @@ a,p,img,h1,h2,span{
 .layui-tab-bar {
 	z-index: -1;
 }
+.layui-tab-title li{
+	padding: 0 0;
+}
 .che1,.che2,.che3,.che4,.che5,.che6{
 	height: 28.2vh;
 	width: 29.8vh;
@@ -135,27 +138,27 @@ a,p,img,h1,h2,span{
 	height: 22.8vh;
 }
 .che1 .che{
-	background: url(../img/pro1.png);
+	background: url(../../img/pro1.png);
 	background-size: 100% 100%;
 }
 .che2 .che{
-	background: url(../img/pro2.png);
+	background: url(../../img/pro2.png);
 	background-size: 100% 100%;
 }
 .che3 .che{
-	background: url(../img/pro3.png);
+	background: url(../../img/pro3.png);
 	background-size: 100% 100%;
 }
 .che4 .che{
-	background: url(../img/pro4.png);
+	background: url(../../img/pro4.png);
 	background-size: 100% 100%;
 }
 .che5 .che{
-	background: url(../img/pro5.png);
+	background: url(../../img/pro5.png);
 	background-size: 100% 100%;
 }
 .che6 .che{
-	background: url(../img/pro6.png);
+	background: url(../../img/pro6.png);
 	background-size: 100% 100%;
 }
 .content_right_nrbox{

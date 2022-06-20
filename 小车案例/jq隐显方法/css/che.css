@@ -133,27 +133,27 @@ a,p,img,h1,h2,span{
 	height: 22.8vh;
 }
 .che1 .che{
-	background: url(../img/pro1.png);
+	background: url(../../img/pro1.png);
 	background-size: 100% 100%;
 }
 .che2 .che{
-	background: url(../img/pro2.png);
+	background: url(../../img/pro2.png);
 	background-size: 100% 100%;
 }
 .che3 .che{
-	background: url(../img/pro3.png);
+	background: url(../../img/pro3.png);
 	background-size: 100% 100%;
 }
 .che4 .che{
-	background: url(../img/pro4.png);
+	background: url(../../img/pro4.png);
 	background-size: 100% 100%;
 }
 .che5 .che{
-	background: url(../img/pro5.png);
+	background: url(../../img/pro5.png);
 	background-size: 100% 100%;
 }
 .che6 .che{
-	background: url(../img/pro6.png);
+	background: url(../../img/pro6.png);
 	background-size: 100% 100%;
 }
 #nr0{

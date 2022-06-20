@@ -648,7 +648,8 @@ no6.onclick=function(){
 			no12.innerHTML=`动漫人物`;
 			no13.innerHTML=`海军首页`;
 			no14.innerHTML=`小车案例`;
-			no15.innerHTML=`无限套娃`;
+			no15.innerHTML=`游戏介绍`;
+			no16.innerHTML=`无限套娃`;
 			nr2.innerHTML="这些是第一学期的一些网页作业汇总";
 		}else if(yygdzt==61){
 			rice();
@@ -722,6 +723,16 @@ no6.onclick=function(){
 	no15.onclick=function(){
 		if(yygdzt==61){
 			rice();
+			nr2.innerHTML=`
+			<iframe src="游戏介绍/index.html" height="100%" width="100%" frameborder="0" allowfullscreen="true"  scrolling="no" style="position: absolute;top:0;left:0; border-radius: 8px;"></iframe>
+			`;
+			zuoyezhanshi();
+			nr3.innerHTML=`<a target="_blank" href="游戏介绍/index.html">阅览模式</a>`;
+		}
+	}
+	no16.onclick=function(){
+		if(yygdzt==61){
+			rice();
 			nr1.innerHTML=`最无聊的一个东西`;
 			nr2.innerHTML=`
 			<p>这是我用Axure RP8做的一个东西，没什么好看的更没有彩蛋，如果有想要看一眼就看吧，要看到全部内容得先给予权限哦</p>
@@ -744,6 +755,8 @@ no8.onclick=function(){
 		no12.innerHTML=`永动摆球`;
 		no13.innerHTML=`水波球`;
 		no14.innerHTML=`加载球`;
+		no15.innerHTML=`百叶窗`;
+		no16.innerHTML=`翻转卡片`;
 		nr1.innerHTML=`常见好玩效果合集`;
 		nr2.innerHTML=`
 		<p>这些都是自己整合的一些好玩有趣的效果集</p>
@@ -781,6 +794,23 @@ no8.onclick=function(){
 			rice();
 			nr2.innerHTML=`
 			<iframe src="效果展示/loadball.html" height="100%" width="100%" frameborder="0" allowfullscreen="true"  scrolling="no" style="position: absolute;top:0;left:0; border-radius: 8px;"></iframe>
+			`;
+		}
+	}
+	no15.onclick=function(){
+		if(yygdzt==8){
+			rice();
+			nr2.innerHTML=`
+			<iframe src="效果展示/louver.html" height="100%" width="100%" frameborder="0" allowfullscreen="true"  scrolling="no" style="position: absolute;top:0;left:0; border-radius: 8px;"></iframe>
+			`;
+			zuoyezhanshi();
+		}
+	}
+	no16.onclick=function(){
+		if(yygdzt==8){
+			rice();
+			nr2.innerHTML=`
+			<iframe src="效果展示/flipcard.html" height="100%" width="100%" frameborder="0" allowfullscreen="true"  scrolling="no" style="position: absolute;top:0;left:0; border-radius: 8px;"></iframe>
 			`;
 		}
 	}

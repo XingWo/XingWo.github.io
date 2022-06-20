@@ -109,7 +109,7 @@
 		</div>
 		<div class="ball" onclick="btnplay()">
 			🎵
-			<audio>
+			<audio><!-- 加controls浏览器自带播放器 -->
 				<source src="img/mqxq.wav"/>
 			</audio>
 			<div class="pause"></div>
@@ -134,7 +134,9 @@
 				}
 				$(document).ready(function(){
 					// 如果引用资源需要写页面加载完毕后执行，否则可能执行了都是没引用到资源
-					open();
+					setTimeout(function() {
+						open();
+					}, 1500);
 				})
 			</script>
 		</div>

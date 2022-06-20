@@ -132,12 +132,12 @@
 						$(".pause").show();
 					}
 				}
-				$(document).ready(function(){
-					// 如果引用资源需要写页面加载完毕后执行，否则可能执行了都是没引用到资源
-					setTimeout(function() {
-						open();
-					}, 1500);
-				})
+				// 放弃了，怎么搞都没法百分百打开网址就默认播放，脚本执行了，但似乎没效果
+				// $(document).ready(function(){
+				// 	setTimeout(function() {
+				// 		open();
+				// 	}, 1500);
+				// })
 			</script>
 		</div>
 		<div id="boxand" class="box">

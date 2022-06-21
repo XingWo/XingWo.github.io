@@ -2,7 +2,9 @@
 	padding: 0%;
 	margin: 0%;
 }
-
+a,p,img,div{
+	user-select: none;
+}
 body{
 	overflow: hidden;
 	height: 100vh;

@@ -7,7 +7,9 @@ body{
 	display: flex;
 	justify-content: center;
 }
-
+a,p,img,div{
+	user-select: none;
+}
 .renwu{
 	margin-top: 20vh;
 	margin-left: 1%;

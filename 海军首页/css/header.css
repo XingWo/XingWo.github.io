@@ -2,7 +2,7 @@
 	padding: 0;
 	margin: 0;
 }
-a,p,img,tr{
+a,p,img,tr,div{
 	user-select: none;
 }
 @font-face {

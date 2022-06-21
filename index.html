@@ -115,29 +115,36 @@
 			<div class="pause"></div>
 			<script>
 				var audio = document.querySelector("audio");
-				var audiozt = 0;
-				function open(){
-					audiozt=1;
-					$(".ball").css("animation",'ball 8s infinite linear');
-					$(".pause").hide();
-					audio.play();
-				}
+				var audiozt = 1;
 				function btnplay(){
 					if(audiozt == 0){
-						open();
+						audiozt=1;
+						$(".ball").css("animation",'ball 8s infinite linear');
+						$(".pause").hide();
+						audio.play();
 					}else{
 						audiozt=0;
-						audio.pause();
 						$(".ball").css("animation",'ball 8s infinite linear paused');
 						$(".pause").show();
+						audio.pause();
 					}
 				}
-				// 放弃了，怎么搞都没法百分百打开网址就默认播放，脚本执行了，但似乎没效果
-				// $(document).ready(function(){
-				// 	setTimeout(function() {
-				// 		open();
-				// 	}, 1500);
-				// })
+				function playd(){
+					
+				}
+				$(document).ready(function(){
+					setTimeout(function() {
+						if(audiozt==1){
+							$(".ball").css("animation",'ball 8s infinite linear');
+							$(".pause").hide();
+							audio.play();
+						}else if(audiozt==0){
+							$(".ball").css("animation",'ball 8s infinite linear paused');
+							$(".pause").show();
+							audio.pause();
+						}
+					}, 500);
+				})
 			</script>
 		</div>
 		<div id="boxand" class="box">

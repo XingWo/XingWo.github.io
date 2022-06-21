@@ -44,6 +44,7 @@ var boxd=document.getElementById("boxd");
 var boss=document.getElementById("boss");
 var btn0=document.getElementById("btn0");
 var muluzt=0;
+var xgzs=0;
 
 function rice(){
 	$("#QT1").hide();
@@ -92,6 +93,7 @@ boss.onclick=function(){
 	btn0.style.display="block";
 	boxd.className="boxleftnextright";
 	muluzt=0;
+	xgzs=0;
 }
 //音乐歌单
 no1.onclick=function(){
@@ -759,12 +761,7 @@ no8.onclick=function(){
 		no11.innerHTML=`移动方快`;
 		no12.innerHTML=`永动摆球`;
 		no13.innerHTML=`水波球`;
-		no14.innerHTML=`加载球`;
-		no15.innerHTML=`百叶窗`;
-		no16.innerHTML=`翻转卡片`;
-		no17.innerHTML=`福签树`;
-		no18.innerHTML=`滚动贴合`;
-		no19.innerHTML=`帘幕效果`;
+		no14.innerHTML=`展开更多`;
 		nr1.innerHTML=`常见好玩效果合集`;
 		nr2.innerHTML=`
 		<p>这些都是自己整合的一些好玩有趣的效果集</p>
@@ -772,6 +769,18 @@ no8.onclick=function(){
 		<p>源码全都打包好在这了，自己看吧</p>
 		<a target="_blank" rel="noopener noreferrer" href="https://github.com/XingWo/XingWo.github.io">源码链接</a>
 		`;
+		if(xgzs==1){
+			no14.innerHTML=`加载球`;
+			no15.innerHTML=`百叶窗`;
+			no16.innerHTML=`翻转卡片`;
+			no17.innerHTML=`福签树`;
+			no18.innerHTML=`滚动贴合`;
+			no19.innerHTML=`帘幕效果`;
+			no20.innerHTML=`暂未添加`;
+			no21.innerHTML=`尽请期待`;
+			no22.innerHTML=`暂未添加`;
+			no23.innerHTML=`尽请期待`;
+		}
 	}
 	no11.onclick=function(){
 		if(yygdzt==8){
@@ -799,10 +808,27 @@ no8.onclick=function(){
 	}
 	no14.onclick=function(){
 		if(yygdzt==8){
-			rice();
-			nr2.innerHTML=`
-			<iframe src="效果展示/loadball.html" height="100%" width="100%" frameborder="0" allowfullscreen="true"  scrolling="no" style="position: absolute;top:0;left:0; border-radius: 8px;"></iframe>
-			`;
+			if(xgzs==0){
+				no14.innerHTML=`加载球`;
+				no15.innerHTML=`百叶窗`;
+				no16.innerHTML=`翻转卡片`;
+				no17.innerHTML=`福签树`;
+				no18.innerHTML=`滚动贴合`;
+				no19.innerHTML=`帘幕效果`;
+				no20.innerHTML=`暂未添加`;
+				no21.innerHTML=`尽请期待`;
+				no22.innerHTML=`暂未添加`;
+				no23.innerHTML=`尽请期待`;
+				setTimeout(function(){
+					xgzs=1;
+				},1);
+			}
+			if(xgzs==1){
+				rice();
+				nr2.innerHTML=`
+				<iframe src="效果展示/loadball.html" height="100%" width="100%" frameborder="0" allowfullscreen="true"  scrolling="no" style="position: absolute;top:0;left:0; border-radius: 8px;"></iframe>
+				`;
+			}
 		}
 	}
 	no15.onclick=function(){

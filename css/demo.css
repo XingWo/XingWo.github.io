@@ -76,6 +76,7 @@ p{
 	font-family:"隶书","pingfang";
 	font-size: 5.0vh;
 	margin-top: 1.3vh;
+	scroll-snap-align: none;
 }
 .boxleftnextright p{
 	font-family:"隶书","pingfang";
@@ -161,6 +162,8 @@ li{
 	float: left;
 	transition:all 0.3s;
 	box-shadow: 2px 2px 5px #888888;
+	scroll-snap-type:y proximity;
+	overflow: scroll;
 }
 .boxleftnextz{
 	border-radius: 8px;

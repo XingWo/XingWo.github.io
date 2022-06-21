@@ -28,6 +28,17 @@ var no17=document.getElementById("no17");
 var no18=document.getElementById("no18");
 var no19=document.getElementById("no19");
 var no10=document.getElementById("no10");
+var no20=document.getElementById("no20");
+var no21=document.getElementById("no21");
+var no22=document.getElementById("no22");
+var no23=document.getElementById("no23");
+var no24=document.getElementById("no24");
+var no25=document.getElementById("no25");
+var no26=document.getElementById("no26");
+var no27=document.getElementById("no27");
+var no28=document.getElementById("no28");
+var no29=document.getElementById("no29");
+var no30=document.getElementById("no30");
 var boxr=document.getElementById("boxr");
 var boxd=document.getElementById("boxd");
 var boss=document.getElementById("boss");
@@ -52,6 +63,17 @@ function good(){
 	no18.innerHTML=``;
 	no19.innerHTML=``;
 	no10.innerHTML=``;
+	no20.innerHTML=``;
+	no21.innerHTML=``;
+	no22.innerHTML=``;
+	no23.innerHTML=``;
+	no24.innerHTML=``;
+	no25.innerHTML=``;
+	no26.innerHTML=``;
+	no27.innerHTML=``;
+	no28.innerHTML=``;
+	no29.innerHTML=``;
+	no30.innerHTML=``;
 }
 function zuoyezhanshi(){
 	$(".boxleft").css("display",'none');
@@ -76,22 +98,16 @@ no1.onclick=function(){
 	console.log(muluzt);
 	if(muluzt == 0){
 		yygdzt=1;
+		good();
 		boxr.className="boxleftnextz";
 		no11.innerHTML=`网易云音乐`;
 		no12.innerHTML=`QQ音乐`;
-		no13.innerHTML=``;
-		no14.innerHTML=``;
-		no15.innerHTML=``;
-		no16.innerHTML=``;
-		no17.innerHTML=``;
-		no18.innerHTML=``;
-		no19.innerHTML=``;
-		no10.innerHTML=``;
 		console.log(222)
 	}
 	no11.onclick=function(){
 		if(yygdzt == 1){
 			yygdzt=11;
+			good();
 			no11.innerHTML=`星沃`;
 			no12.innerHTML=`猫宁孜然`;
 			no13.innerHTML=`罗小黑`;
@@ -134,16 +150,11 @@ no1.onclick=function(){
 		}
 		else if(yygdzt == 1){
 			yygdzt=12;
+			good();
 			no11.innerHTML=`光遇 游戏原声带`;
 			no12.innerHTML=`看看世界有多大`;
 			no13.innerHTML=`个人收藏`;
 			no14.innerHTML=`纯音乐收藏`;
-			no15.innerHTML=``;
-			no16.innerHTML=``;
-			no17.innerHTML=``;
-			no18.innerHTML=``;
-			no19.innerHTML=``;
-			no10.innerHTML=``;
 		}
 		else if(yygdzt == 12){
 			rice();
@@ -270,6 +281,7 @@ no1.onclick=function(){
 no2.onclick=function(){
 	if(muluzt == 0){
 		spzfzt=2;
+		good();
 		boxr.className="boxleftnextz";
 		no11.innerHTML=`罗小黑战记`;
 		no12.innerHTML=`名侦探柯南`;
@@ -279,8 +291,6 @@ no2.onclick=function(){
 		no16.innerHTML=`京剧猫`;
 		no17.innerHTML=`斗罗大陆`;
 		no18.innerHTML=`小魔头暴露啦！`;
-		no19.innerHTML=``;
-		no10.innerHTML=``;
 	}
 	no12.onclick=function(){
 		if(spzfzt == 2){
@@ -392,16 +402,11 @@ no2.onclick=function(){
 		if(spzfzt == 2){
 			rice();
 			spzfzt=26
+			good();
 			no11.innerHTML=`京剧猫 第一季`
 			no12.innerHTML=`京剧猫 第二季`
 			no13.innerHTML=`京剧猫 第三季`
 			no14.innerHTML=`京剧猫 第四季`
-			no15.innerHTML=``
-			no16.innerHTML=``
-			no17.innerHTML=``
-			no18.innerHTML=``
-			no19.innerHTML=``
-			no10.innerHTML=``
 			nr1.innerHTML=`《京剧猫》`;
 			nr2.innerHTML=`<p>《京剧猫》是由北京璀璨星空文化发展有限公司出品的中国首部将传统文化中的京剧元素与动画相结合的国产原创动画IP。剧情以猫为主角，以国粹京剧为核心，在热血的剧情中向大家宣扬着积极向上的正能量。</p>`;
 			nr3.innerHTML=``;
@@ -758,6 +763,8 @@ no8.onclick=function(){
 		no15.innerHTML=`百叶窗`;
 		no16.innerHTML=`翻转卡片`;
 		no17.innerHTML=`福签树`;
+		no18.innerHTML=`滚动贴合`;
+		no19.innerHTML=`帘幕效果`;
 		nr1.innerHTML=`常见好玩效果合集`;
 		nr2.innerHTML=`
 		<p>这些都是自己整合的一些好玩有趣的效果集</p>
@@ -821,6 +828,24 @@ no8.onclick=function(){
 			nr2.innerHTML=`
 			<iframe src="效果展示/blesscard.html" height="100%" width="100%" frameborder="0" allowfullscreen="true"  scrolling="no" style="position: absolute;top:0;left:0; border-radius: 8px;"></iframe>
 			`;
+		}
+	}
+	no18.onclick=function(){
+		if(yygdzt==8){
+			rice();
+			nr2.innerHTML=`
+			<iframe src="效果展示/rollingfit.html" height="100%" width="100%" frameborder="0" allowfullscreen="true"  scrolling="no" style="position: absolute;top:0;left:0; border-radius: 8px;"></iframe>
+			`;
+			zuoyezhanshi();
+		}
+	}
+	no19.onclick=function(){
+		if(yygdzt==8){
+			rice();
+			nr2.innerHTML=`
+			<iframe src="效果展示/rollingfit2.html" height="100%" width="100%" frameborder="0" allowfullscreen="true"  scrolling="no" style="position: absolute;top:0;left:0; border-radius: 8px;"></iframe>
+			`;
+			zuoyezhanshi();
 		}
 	}
 }

@@ -110,7 +110,7 @@
 		<div class="ball" onclick="btnplay()">
 			🎵
 			<audio><!-- 加controls浏览器自带播放器 -->
-				<source src="img/mqxq.wav"/>
+				<source src="img/mqxq.mp3"/>
 			</audio>
 			<div class="pause"></div>
 			<script>
@@ -129,11 +129,8 @@
 						audio.pause();
 					}
 				}
-				function playd(){
-					
-				}
 				$(document).ready(function(){
-					setTimeout(function() {
+					setTimeout(function(){
 						if(audiozt==1){
 							$(".ball").css("animation",'ball 8s infinite linear');
 							$(".pause").hide();
@@ -143,7 +140,7 @@
 							$(".pause").show();
 							audio.pause();
 						}
-					}, 500);
+					},1000);
 				})
 			</script>
 		</div>

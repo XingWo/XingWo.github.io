@@ -162,22 +162,24 @@
 			card.onmouseleave=function(){
 				if(zt==1){
 					if(tim<2){
+						zt=2;
 						setTimeout(function(){
 							card.className="card cards";
 							back.className="back back_1";
 							front.className="front front_1";
 							setTimeout(function(){
 								zt=0;
-							},800);
+							},1300);
 						},800);
 					}
 					else{
+						zt=2;
 						card.className="card cards";
 						back.className="back back_1";
 						front.className="front front_1";
 						setTimeout(function(){
 							zt=0;
-						},800);
+						},1300);
 					}
 				}
 			}

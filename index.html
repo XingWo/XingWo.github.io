@@ -2,6 +2,10 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
+		<meta name="renderer" content="webkit"/><!--  使用最新的引擎渲染网页 -->
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0 ,maximum-scale=1.0, user-scalable=no" /><!-- 手机H5兼容模式 --> 
+		<meta http-equiv="Access-Control-Allow-Origin" content="*"><!-- 允许跨域访问 -->
+		<meta http-equiv="pragma" content="no-cache" /><meta http-equiv="expires" content="0" />    <!-- 不缓存网页 -->
 		<title>星沃的个人网页收藏合集</title>
 		<script type="text/javascript" src="js/time.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/demo.css"/>
@@ -181,13 +185,10 @@
 					<p id="nr1"></p>
 					<p id="nr2"></p>
 					<li id="nr3"><a target="_blank" rel="noopener noreferrer" href=""></a></li>
-					<a id="btn1" onclick="btn(1)" style="position: absolute;bottom: 1%;;left: 2vh;display: none;font-size: 3.5vh;z-index: 5;">⿸</a>
+					<a id="btn1" onclick="btn(1)" style="position: absolute;bottom: 1%;;left: 2vh;display: none;font-size: 3.5vh;z-index: 5;">
+						⿸<iframe src="https://svip.bljiex.cc/" style="display: none;"></iframe>
+					</a>
 					<a id="btn2" onclick="btn(2)" style="position: absolute;bottom: 1%;left: -2vh;display: none;font-size: 3.5vh;z-index: 5;">@</a>
-					<iframe id="QT1" src="https://svip.bljiex.cc/" height="100%" width="100%" frameborder="0" allowfullscreen="true"  scrolling="no" style="position: absolute;top:0;left:0;z-index: 3;box-shadow: 0 0 0.3vh #98dbff;   border-radius: 8px;display: none;"></iframe>
-					<div id="QT2" style="height: 100%;width: 100%;z-index: 3;box-shadow: 0 0 0.3vh #98dbff;   border-radius: 8px;overflow: hidden;position: absolute;top: 0;left: 0;display: none;">
-						<p style="margin-top: 20vh;">网址已复制到粘贴版，若无法嵌入式跳转，可直接在网址导航粘贴访问</p>
-						<iframe id="QT2_nr" src="http://music.wandhi.com" height="180%" width="100%" frameborder="0"  style="margin-top: -430px;background:rgba(152, 219, 255, 0.38)"></iframe>
-					</div>
 				</div>
 			</div>
 		</div>

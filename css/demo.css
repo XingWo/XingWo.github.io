@@ -249,30 +249,30 @@ li{
 
 .ball{
 	position: absolute;
-	right: 50px;
-	top: 15px;
-	font-size: 20px;
-	line-height: 33px;
+	right: 5vh;
+	top: 1.5vh;
+	font-size: 2vh;
+	line-height: 3.3vh;
 	text-align: center;
 	color: transparent;
 	background-image: linear-gradient(to right,#00ffff,#aaaaff);
 	-webkit-background-clip: text;
 	transition: 0.4s;
-	width: 32px;
-	height: 33px;
-	border: 1px solid #fff;
+	width: 3.2vh;
+	height: 3.3vh;
+	border: .1vh solid #fff;
 	border-radius: 28% 62% 63% 37%/ 41% 44% 56% 59%;
 	animation: ball 8s infinite linear paused;
 	z-index: 5;
 }
 .pause{
-	width: 30px;
-	height: 6px;
+	width: 3vh;
+	height: .6vh;
 	position: absolute;
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%,-50%);
-	border: 1px none #fff;
+	border: .1vh none #fff;
 	background-image: linear-gradient(to right,#00ffff,#aaaaff);
 	border-radius: 0% 100% 0% 100%/ 0% 100% 0% 100%;
 }
@@ -282,9 +282,9 @@ li{
 	display: block;
 	position: absolute;
 	top: 0;
-	width: 32px;
-	height: 32px;
-	border: 1px solid #fff;
+	width: 3.2vh;
+	height: 3.3vh;
+	border: .1vh solid #fff;
 	border-radius: 38% 62% 63% 37%/ 41% 44% 56% 59%;
 	animation: ball 5s infinite linear;
 }
@@ -294,9 +294,9 @@ li{
 	display: block;
 	position: absolute;
 	top: 0;
-	width: 32px;
-	height: 32px;
-	border: 1px solid #fff;
+	width: 3.2vh;
+	height: 3.3vh;
+	border: .1vh solid #fff;
 	border-radius: 38% 62% 63% 37%/ 41% 44% 56% 59%;
 	animation: ball 3s infinite linear;
 }

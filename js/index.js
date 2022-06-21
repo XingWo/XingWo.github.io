@@ -757,6 +757,7 @@ no8.onclick=function(){
 		no14.innerHTML=`加载球`;
 		no15.innerHTML=`百叶窗`;
 		no16.innerHTML=`翻转卡片`;
+		no17.innerHTML=`福签树`;
 		nr1.innerHTML=`常见好玩效果合集`;
 		nr2.innerHTML=`
 		<p>这些都是自己整合的一些好玩有趣的效果集</p>
@@ -814,15 +815,30 @@ no8.onclick=function(){
 			`;
 		}
 	}
+	no17.onclick=function(){
+		if(yygdzt==8){
+			rice();
+			nr2.innerHTML=`
+			<iframe src="效果展示/blesscard.html" height="100%" width="100%" frameborder="0" allowfullscreen="true"  scrolling="no" style="position: absolute;top:0;left:0; border-radius: 8px;"></iframe>
+			`;
+		}
+	}
 }
 
 
 function qtbtn(num){
 	if(num==1){
-		$("#QT1").show();
+		nr2.innerHTML=`
+		<iframe id="QT1" src="https://svip.bljiex.cc/" height="100%" width="100%" frameborder="0" allowfullscreen="true"  scrolling="no" style="position: absolute;top:0;left:0;z-index: 3;box-shadow: 0 0 0.3vh #98dbff;   border-radius: 8px;"></iframe>
+		`;
 	}
 	if(num==2){
-		$("#QT2").show();
+		nr2.innerHTML=`
+		<div id="QT2" style="height: 100%;width: 100%;z-index: 3;box-shadow: 0 0 0.3vh #98dbff;   border-radius: 8px;overflow: hidden;position: absolute;top: 0;left: 0;">
+			<p style="margin-top: 20vh;">网址已复制到粘贴版，若无法嵌入式跳转，可直接在网址导航粘贴访问</p>
+			<iframe id="QT2_nr" src="http://music.wandhi.com" height="180%" width="100%" frameborder="0"  style="margin-top: -430px;background:rgba(152, 219, 255, 0.38)"></iframe>
+		</div>
+		`;
 		var wandhi = $("#qtbtn2").text();//获取文本
 		var flag2 = copyText(wandhi); //传递文本
 		layer.tips('已复制网址', '#boss',{

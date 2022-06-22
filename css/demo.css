@@ -229,7 +229,8 @@ li{
 	justify-content:flex-end;
 }
 .boxrightnext a{
-	box-shadow: 2px 2px 8px #ffaaff;
+	background: rgba(85, 170, 255, 0.6);
+	box-shadow:-.1vh -.1vh .2vh .3vh #ffaaff;
 	border-radius: 5px;
 	margin-right: 6vh;
 }
@@ -254,7 +255,8 @@ li{
 	box-shadow: 2px 2px 5px #888888;
 }
 .boxrightnext a:hover{
-	box-shadow: 1px 1px 5px #ff00ff;
+	box-shadow: 0vh 0vh .2vh .3vh #ff00ff;
+	background: rgba(85, 85, 255, 0.6);
 }
 
 
@@ -262,22 +264,22 @@ li{
 	position: absolute;
 	right: 5vh;
 	top: 1.5vh;
-	font-size: 2vh;
-	line-height: 3.3vh;
+	font-size: 3.6vh;
+	line-height: 5.3vh;
 	text-align: center;
 	color: transparent;
 	background-image: linear-gradient(to right,#00ffff,#aaaaff);
 	-webkit-background-clip: text;
 	transition: 0.4s;
-	width: 3.2vh;
-	height: 3.3vh;
+	width: 5.2vh;
+	height: 5.3vh;
 	border: .1vh solid #fff;
 	border-radius: 28% 62% 63% 37%/ 41% 44% 56% 59%;
 	animation: ball 8s infinite linear paused;
 	z-index: 5;
 }
 .pause{
-	width: 3vh;
+	width: 5vh;
 	height: .6vh;
 	position: absolute;
 	left: 50%;
@@ -293,8 +295,8 @@ li{
 	display: block;
 	position: absolute;
 	top: 0;
-	width: 3.2vh;
-	height: 3.3vh;
+	width: 5.2vh;
+	height: 5.3vh;
 	border: .1vh solid #fff;
 	border-radius: 38% 62% 63% 37%/ 41% 44% 56% 59%;
 	animation: ball 5s infinite linear;
@@ -305,8 +307,8 @@ li{
 	display: block;
 	position: absolute;
 	top: 0;
-	width: 3.2vh;
-	height: 3.3vh;
+	width: 5.2vh;
+	height: 5.3vh;
 	border: .1vh solid #fff;
 	border-radius: 38% 62% 63% 37%/ 41% 44% 56% 59%;
 	animation: ball 3s infinite linear;
@@ -318,4 +320,7 @@ li{
   100% {
     transform: rotateZ(360deg);
   }
+}
+.layui-icon{
+	font-size: 3.98vh;
 }

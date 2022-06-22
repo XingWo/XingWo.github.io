@@ -94,6 +94,7 @@ boss.onclick=function(){
 	boxd.className="boxleftnextright";
 	muluzt=0;
 	xgzs=0;
+	boss.innerHTML=`星沃的网页书签`;
 }
 //音乐歌单
 no1.onclick=function(){

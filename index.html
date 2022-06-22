@@ -2,6 +2,8 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
+		<link rel="stylesheet" href="js/layui-v2.6.8/layui/css/layui.css">
+		<script src="js/layui-v2.6.8/layui/layui.js"></script>
 		<meta name="renderer" content="webkit"/><!--  使用最新的引擎渲染网页 -->
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0 ,maximum-scale=1.0, user-scalable=no" /><!-- 手机H5兼容模式 --> 
 		<meta http-equiv="Access-Control-Allow-Origin" content="*"><!-- 允许跨域访问 -->
@@ -195,10 +197,10 @@
 					<p id="nr1"></p>
 					<p id="nr2"></p>
 					<li id="nr3"><a target="_blank" rel="noopener noreferrer" href=""></a></li>
-					<a id="btn1" onclick="btn(1)" style="position: absolute;bottom: 1%;;left: 2vh;display: none;font-size: 3.5vh;z-index: 5;">
-						⿸<iframe src="https://svip.bljiex.cc/" style="display: none;"></iframe>
+					<a id="btn1" onclick="btn(1)" style="position: absolute;bottom: 1%;;left: 2vh;display: none;z-index: 5;">
+						<i class="layui-icon">&#xe622;</i><iframe src="https://svip.bljiex.cc/" style="display: none;"></iframe>
 					</a>
-					<a id="btn2" onclick="btn(2)" style="position: absolute;bottom: 1%;left: -2vh;display: none;font-size: 3.5vh;z-index: 5;">@</a>
+					<a id="btn2" onclick="btn(2)" style="position: absolute;bottom: 1%;left: -6.5vh;display: none;z-index: 5;"><i class="layui-icon">&#xe68e;</i></a>
 				</div>
 			</div>
 		</div>
@@ -239,10 +241,12 @@
 			})
 			function btn(num){
 				if(num==0){
+					var boss=document.getElementById("boss");
 					$("#boxr").css("display",'none');
 					$("#boxd").removeClass("boxleftnextright");
 					$("#boxd").addClass("boxleftnext");
 					$("#btn0").css("display",'none');
+					boss.innerHTML=`点击返回主菜单`;
 				}
 				if(num==1){
 					$(".boxleft").css("display",'none');

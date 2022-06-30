@@ -105,8 +105,6 @@
 							}
 						}
 					}
-					var boxhei=boxri.clientHeight;
-					$("#QT2_nr").css("height",(boxhei+430)+'px');
 				}
 				function loop(){
 					window.requestAnimationFrame(function(){
@@ -266,10 +264,6 @@
 					$("#boxright").addClass("boxright");
 					$("#btn2").css("display",'none');
 					$(".boxleft").css("display",'block');
-					// 获取一个高度修改另一个高度，适用于不同单位的物体，如10vh里套一个10vh+10px的嵌入，margin-top多余的10px的固定部分
-					var boxri=document.getElementById("boxand");
-					var boxhei=boxri.clientHeight;
-					$("#QT2_nr").css("height",(boxhei+430)+'px');
 				}
 				if(num==3){
 					var nr2=document.getElementById("nr2");

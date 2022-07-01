@@ -888,7 +888,7 @@ function qtbtn(num){
 		nr2.innerHTML=`
 		<div id="QT2" style="height: 100%;width: 100%;z-index: 3;box-shadow: 0 0 0.3vh #98dbff;   border-radius: 8px;overflow: hidden;position: absolute;top: 0;left: 0;">
 			<p style="margin-top: 20vh;">网址已复制到粘贴版，若无法嵌入式跳转，可直接在网址导航粘贴访问</p>
-			<iframe id="QT2_nr" src="http://music.wandhi.com" width="100%" frameborder="0"  style="position: absolute;left: 0;top: -430px;background:rgba(152, 219, 255, 0.38)"></iframe>
+			<iframe id="QT2_nr" src="http://music.wandhi.com" width="100%" frameborder="0"  style="position: absolute;left: 0;top: -410px;background:rgba(152, 219, 255, 0.38)"></iframe>
 		</div>
 		`;
 		var wandhi = $("#qtbtn2").text();//获取文本
@@ -899,7 +899,7 @@ function qtbtn(num){
 		// 获取一个高度修改另一个高度，适用于不同单位的物体，如10vh里套一个10vh+10px的嵌入，margin-top多余的10px的固定部分
 		var boxri=document.getElementById("boxand");
 		var boxhei=boxri.clientHeight;
-		$("#QT2_nr").css("height",(boxhei+430)+'px');
+		$("#QT2_nr").css("height",(boxhei+463)+'px');
 	}
 	if(num==3){
 		nr2.innerHTML=`

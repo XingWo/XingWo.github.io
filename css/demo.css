@@ -21,7 +21,7 @@ a,p,img,div{
 	content: '';
 	background: steelblue;
 	opacity:0.8;
-	transition:all 0.5s;
+	transition:all 0.3s;
 	z-index: 100;
 	display: none;
 	line-height: 100vh;
@@ -138,7 +138,7 @@ li{
 	background-position: center;
 	filter: blur(3px);
 	z-index: -1;
-	transition:all 0.8s;
+	transition:all 0.3s;
 }
 .box:hover.box::before{
 	background-image: url(../img/background.png);
@@ -270,7 +270,7 @@ li{
 	color: transparent;
 	background-image: linear-gradient(to right,#00ffff,#aaaaff);
 	-webkit-background-clip: text;
-	transition: 0.4s;
+	transition: 0.3s;
 	width: 5.2vh;
 	height: 5.3vh;
 	border: .1vh solid #fff;
@@ -290,7 +290,7 @@ li{
 	border-radius: 0% 100% 0% 100%/ 0% 100% 0% 100%;
 }
 .ball::after {
-	transition: 0.4s;
+	transition: 0.3s;
 	content: "";
 	display: block;
 	position: absolute;
@@ -302,7 +302,7 @@ li{
 	animation: ball 5s infinite linear;
 }
 .ball::before {
-	transition: 0.4s;
+	transition: 0.3s;
 	content: "";
 	display: block;
 	position: absolute;

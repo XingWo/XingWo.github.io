@@ -7,6 +7,7 @@ a,p,img,span{
 }
 body{
 	min-width: 1190px;
+	background: #F1F1F1;
 	cursor: url(../img/01.cur),auto;
 	display: flex;
 	justify-content: center;
@@ -76,7 +77,6 @@ a{
 	background-position: 23px 0;
 }
 .denglu{
-	width: 380px;
 	height: 100%;
 	display: flex;
 	align-items: center;
